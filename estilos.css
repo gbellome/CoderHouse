@@ -1,0 +1,236 @@
+* {
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFF;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+body {
+    background-color: lightgray;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main {
+    background-color: lightseagreen;
+    width: 600px;
+    height: 400px;
+}
+.btn{
+    border: 1px solid #FFF;
+    cursor: pointer;
+}
+.btn-radius{
+    border-radius: 15%;
+}
+.btn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0px 1px 2px 1px #AAA;
+    background: rgba(255, 255, 255, 0.1);
+}
+.btn:active{
+    transform: translateY(1px);
+    box-shadow: 0px -1px 2px 1px #AAA;
+}
+.hidden{
+    display: none !important;
+}
+
+.canilla{
+    text-align: center;
+    height: 400px;
+    padding: 0 2%;
+}
+.canilla h1{
+    margin-top: 50%;
+    font-size: 2em;
+    font-weight: 400;
+    color: lightseagreen;
+}
+.canilla span{
+    color: lightseagreen;
+    font-size: 5em;
+    font-weight: 800;
+}
+#ayuda{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    border-radius: 0 0 50% 50%;
+    background-color: lightseagreen;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+#ayuda::before{
+    content: '';
+    position: absolute;
+    top: -20px;
+    height: 20px;
+    width: 40px;
+    background-color: lightseagreen;
+}
+#ayuda span{
+    font-size: 40px;
+    cursor: pointer;
+}
+
+#start div h1{
+    font-size: 3em;
+    font-weight: 800;
+}
+#start div:first-child span{
+    font-size: 1em !important;
+    font-weight: 400 !important;
+}
+
+#home, #users, #start{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+#home div, #users div, #start div{
+    height: 180px;
+    width: 200px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#start div{
+    margin-top: 110px;
+}
+#home div span, #users div span, #start div span{
+    text-align: center;
+    font-size: 6em;
+}
+#home div label, #users div label, #start div label{
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#users div{
+    height: 150px;
+    width: 120px;
+    margin: 25px 0;
+}
+
+#register nav div:first-child{
+    width: 20%;
+    padding: 10px 0;
+    border: 1px solid #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#register nav div:last-child{
+    width: 80%;
+    padding: 10px 0;
+    border: 1px solid #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#register article {
+    background: #999;
+    height: 100%;
+}
+#register article table{
+    width: 100%;
+    margin-top: 25px;
+    border-collapse: collapse;
+}
+#register article table th{
+    font-size: 1.3em;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #FFF;
+}
+#register article table tbody{
+    background: #666;
+    text-align: center;
+}
+#register article table td{
+    font-size: 1.2em;
+    padding: 5px 0;
+    border-bottom: 1px solid #FFF;
+}
+
+#principal, #register{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 100%;
+    width: 100%;
+}
+#principal nav, #register nav{
+    display: flex;
+    justify-content: start;
+}
+#principal div{
+    width: 23.3%;
+    padding: 10px 0;
+    border: 1px solid #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#principal div label, #principal div span{
+    font-size: 2em;
+    font-weight: 500;
+}
+#principal nav div:last-child{
+    width: 30%;
+}
+#principal nav div:last-child label{
+    font-size: 1.3em;
+}
+#principal article{
+    height: 100%;
+    display: flex;
+}
+#principal article div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+#principal article label{
+    font-size: 7em;
+}
+#principal article label.small{
+    font-size: 2em;
+    font-style: italic;
+}
+#principal article .action div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    border: 0;
+}
+#principal article .action span{
+    font-weight: 800;
+    font-size: 4em;
+}
+
+#principal footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+#principal footer div{
+    width: 50%;
+}

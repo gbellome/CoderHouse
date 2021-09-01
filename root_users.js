@@ -1,0 +1,51 @@
+// Root Users
+
+document.getElementById('user_1').addEventListener('click', () => {
+    USERS.setActiveUser('User 1')
+    ocultarVistas('users', 'principal')
+    initTimer()
+    initTimeOut(USERS)
+    document.getElementById('lblUser').getElementsByTagName('label')[0].innerText = USERS.getUsersActive()
+})
+document.getElementById('user_2').addEventListener('click', () => {
+    USERS.setActiveUser('User 2')
+    ocultarVistas('users', 'principal')
+    initTimer()
+    initTimeOut(USERS)
+    document.getElementById('lblUser').getElementsByTagName('label')[0].innerText = USERS.getUsersActive()
+})
+document.getElementById('user_3').addEventListener('click', () => {
+    USERS.setActiveUser('User 3')
+    ocultarVistas('users', 'principal')
+    initTimer()
+    initTimeOut(USERS)
+    document.getElementById('lblUser').getElementsByTagName('label')[0].innerText = USERS.getUsersActive()
+})
+document.getElementById('user_4').addEventListener('click', () => {
+    USERS.setActiveUser('User 4')
+    ocultarVistas('users', 'principal')
+    initTimer()
+    initTimeOut(USERS)
+    document.getElementById('lblUser').getElementsByTagName('label')[0].innerText = USERS.getUsersActive()
+})
+document.getElementById('user_5').addEventListener('click', () => {
+    USERS.setActiveUser('User 5')
+    ocultarVistas('users', 'principal')
+    initTimer()
+    initTimeOut(USERS)
+    document.getElementById('lblUser').getElementsByTagName('label')[0].innerText = USERS.getUsersActive()
+})
+document.getElementById('user_6').addEventListener('click', () => {
+    USERS.setActiveUser('User 6')
+    ocultarVistas('users', 'principal')
+    initTimer()
+    initTimeOut(USERS)
+    document.getElementById('lblUser').getElementsByTagName('label')[0].innerText = USERS.getUsersActive()
+})
+document.getElementById('user_7').addEventListener('click', () => {
+    USERS.setActiveUser('User 7')
+    ocultarVistas('users', 'principal')
+    initTimer()
+    initTimeOut(USERS)
+    document.getElementById('lblUser').getElementsByTagName('label')[0].innerText = USERS.getUsersActive()
+})
